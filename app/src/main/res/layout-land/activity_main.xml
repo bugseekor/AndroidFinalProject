@@ -16,20 +16,20 @@
         android:layout_marginBottom="2dp">
         <TextView
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginLeft="40dp" />
         <Button
             android:id="@+id/Button1"
             android:onClick="onClick"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="2"
             android:text="Button1"
             android:background="@color/blue" />
         <TextView
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -40,7 +40,7 @@
             android:id="@+id/Button2"
             android:onClick="onClick"
             android:layout_width="0dp"
-            android:layout_height="170dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginLeft="40dp"
             android:text="Button1"
@@ -48,13 +48,13 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="170dp"
+            android:layout_height="70dp"
             android:layout_weight="2" />
         <Button
             android:id="@+id/Button3"
             android:onClick="onClick"
             android:layout_width="0dp"
-            android:layout_height="170dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginRight="40dp"
             android:text="Button3"
@@ -67,20 +67,20 @@
             android:id="@+id/Button4"
             android:onClick="onClick"
             android:layout_width="0dp"
-            android:layout_height="170dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginLeft="40dp"
             android:text="Button4"
             android:background="@color/blue"/>
         <TextView
             android:layout_width="0dp"
-            android:layout_height="170dp"
+            android:layout_height="70dp"
             android:layout_weight="2" />
         <Button
             android:id="@+id/Button5"
             android:onClick="onClick"
             android:layout_width="0dp"
-            android:layout_height="170dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginRight="40dp"
             android:text="Button5"
@@ -90,20 +90,20 @@
         android:gravity="center_vertical">
         <TextView
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginLeft="40dp" />
         <Button
             android:id="@+id/Button6"
             android:onClick="onClick"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="2"
             android:text="Button6"
             android:background="@color/blue"/>
         <TextView
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginRight="40dp" />
     </TableRow>
