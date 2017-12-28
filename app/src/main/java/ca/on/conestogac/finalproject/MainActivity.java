@@ -2,9 +2,12 @@ package ca.on.conestogac.finalproject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.google.android.gms.actions.NoteIntents;
 
 //commit test
 
@@ -28,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.Button4:
                 sendMessage3(view);
                 break;
+            case R.id.Button5:
+                sendMessage4(view);
+                break;
+            case R.id.Button7:
+                Intent intentText = new Intent(Intent.ACTION_SENDTO);
+                intentText.setData(Uri.parse("smsto:" + Uri.encode("1234")));
+                startActivity(intentText);
+                break;
+            case R.id.Button8:
+                Intent intentDial = new Intent(Intent.ACTION_DIAL);
+                intentDial.setData(Uri.parse("tel:" + Uri.encode("1234")));
+                startActivity(intentDial);
+                break;
         }
     }
     public void sendMessage1(View view){
@@ -40,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendMessage3(View view){
         Intent intent = new Intent(this, FirebaseActivity.class);
+        startActivity(intent);
+    }
+    public void sendMessage4(View view){
+        Intent intent = new Intent(this, SQLliteActivity.class);
         startActivity(intent);
     }
 }
