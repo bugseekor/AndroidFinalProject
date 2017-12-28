@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.Button3:
                 sendMessage2(view);
                 break;
+            case R.id.Button4:
+                sendMessage3(view);
+                break;
         }
     }
     public void sendMessage1(View view){
@@ -33,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendMessage2(View view){
         Intent intent = new Intent(this, AsyncActivity.class);
+        startActivity(intent);
+    }
+    public void sendMessage3(View view){
+        Intent intent = new Intent(this, FirebaseActivity.class);
         startActivity(intent);
     }
 }

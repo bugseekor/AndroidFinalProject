@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "112067820238",
+    "firebase_url": "https://fir-notification-5312f.firebaseio.com",
+    "project_id": "fir-notification-5312f",
+    "storage_bucket": "fir-notification-5312f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112067820238:android:3c3d9dface8a3a51",
+        "android_client_info": {
+          "package_name": "ca.on.conestogac.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112067820238-pqgndvfvvoc0vms4ugncjp9pugs2fuj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApv-Mc87nOShUhdIPHPCSW3oAaD9Hkpz0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
