@@ -10,6 +10,7 @@ import android.view.View;
 import com.google.android.gms.actions.NoteIntents;
 
 //commit test
+//commit test 20171229
 
 public class MainActivity extends AppCompatActivity {
 
