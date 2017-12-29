@@ -21,7 +21,7 @@ public class AllDB {
     public static final int NOTE_LINE_COL = 0;
     public static final String CREATE_NOTE_TABLE =
             "CREATE TABLE " + NOTE_TABLE + " (" +
-                    NOTE_LINE + "TEXT NOT NULL);";
+                    NOTE_LINE + " TEXT NOT NULL);";
     public static final String DROP_NOTE_TABLE =
             "DROP TABLE IF EXISTS " + NOTE_TABLE;
 
@@ -92,5 +92,11 @@ public class AllDB {
         long rowID = db.insert(NOTE_TABLE, null, cv);
         this.closeDB();
         return rowID;
+    }
+    public int deleteAllNotes(){
+        this.openWriteableDB();
+        int rowCount = db.delete(NOTE_TABLE, null, null);
+        this.closeDB();
+        return rowCount;
     }
 }

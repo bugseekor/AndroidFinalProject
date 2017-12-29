@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.Button5:
                 sendMessage4(view);
                 break;
+            case R.id.Button6:
+                startService(new Intent(this, MyService.class));
+                finish();
+                System.exit(0);
+                break;
             case R.id.Button7:
                 Intent intentText = new Intent(Intent.ACTION_SENDTO);
                 intentText.setData(Uri.parse("smsto:" + Uri.encode("1234")));

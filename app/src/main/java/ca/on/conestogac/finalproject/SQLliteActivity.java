@@ -27,6 +27,9 @@ public class SQLliteActivity extends AppCompatActivity {
             case R.id.Button3:
                 insertNote();
                 break;
+            case R.id.Button4:
+                deleteAll();
+                break;
         }
     }
     public void selectAll(){
@@ -38,17 +41,21 @@ public class SQLliteActivity extends AppCompatActivity {
         TextView ResultTextView = (TextView) findViewById(R.id.ResultTextView);
         ResultTextView.setText(sb.toString());
     }
-    public void insertNote(){
+    public void insertNote() {
         EditText noteEditText = (EditText) findViewById(R.id.noteEditText);
         String line = noteEditText.getText().toString();
-        try{
+        try {
             Note note = new Note(line);
             long insertID = db.insertNote(note);
             noteEditText.setText("");
-        } catch (Exception e){
+            selectAll();
+        } catch (Exception e) {
             TextView ResultTextView = (TextView) findViewById(R.id.ResultTextView);
             ResultTextView.setText(e.getMessage());
         }
-
+    }
+    public void deleteAll(){
+        db.deleteAllNotes();
+        selectAll();
     }
 }
